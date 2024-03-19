@@ -25,7 +25,7 @@
                 <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                 <div class="row mt-3">
                     <div class="col-md-6 offset-md-3">
-                      <router-link to="/" class="btn btn-secondary mb-3">
+                      <router-link to="/home" class="btn btn-secondary mb-3">
                         Volver a la lista de productos
                       </router-link>
                     </div>
@@ -75,7 +75,7 @@
           console.log('Producto actualizado correctamente');
           // Mostrar alerta de éxito
           Swal.fire('¡Éxito!', 'Producto actualizado exitosamente', 'success');
-          this.$router.push({ path: '/' }); // Redirige al listado de productos después de actualizar
+          this.$router.push({ path: '/home' }); // Redirige al listado de productos después de actualizar
         } catch (error) {
           console.error('Error al actualizar el producto:', error);
           // Mostrar alerta de error

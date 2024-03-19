@@ -8,10 +8,17 @@ import AboutView from '../views/AboutView.vue';
 import GraficaView from '../views/GraficaView.vue';
 import ReporteView from '../views/ReporteView.vue';
 import Login       from '../views/Login.vue';
+import RegisterForm from '../views/RegisterForm.vue';
 const routes = [
   {
     path: '/',
+   
     redirect: '/login' // Redirige '/' a '/login'
+  },
+  {
+    path: '/register',
+  
+    component: RegisterForm
   },
   {
     path: '/home',
