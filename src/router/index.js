@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/',
    
-    redirect: '/login' // Redirige '/' a '/login'
+    redirect: '/home' // Redirige '/' a '/login'
   },
   {
     path: '/register',
