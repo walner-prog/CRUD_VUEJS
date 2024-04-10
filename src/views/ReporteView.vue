@@ -1,5 +1,10 @@
 <template>
     <div class="row">
+      <div class="col-lg-4 mb-3">
+        <button @click="goToCreateProductView" class="btn btn-success">
+          <i class="fa-solid fa-plus"></i> Crear Producto
+        </button>
+      </div>
       <div class="col-lg-8 offset-lg-2">
         <div class="table-responsive">
           <DataTable :data="products" :columns="columns" class="table table-striped table-bordered display custom-table"
